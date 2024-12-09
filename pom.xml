@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.vmware.software_forensic_kit</groupId>
+  <groupId>com.omnissa.software_forensic_kit</groupId>
   <artifactId>software_forensic_kit</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
@@ -75,11 +75,11 @@
 		        <archive>
 		          <manifest>
 		          <addClasspath>true</addClasspath>
-		            <mainClass>com.vmware.software_forensic_kit.Java_Gadget_Kit</mainClass>
+		            <mainClass>com.omnissa.software_forensic_kit.Java_Gadget_Kit</mainClass>
 		          </manifest>
 		          <manifestEntries>
-		           <Premain-Class>com.vmware.software_forensic_kit.java_gadget.agent.Java_Gadget_Agent</Premain-Class>
-            		<Agent-Class>com.vmware.software_forensic_kit.java_gadget.agent.Java_Gadget_Agent</Agent-Class>
+		           <Premain-Class>com.omnissa.software_forensic_kit.java_gadget.agent.Java_Gadget_Agent</Premain-Class>
+            		<Agent-Class>com.omnissa.software_forensic_kit.java_gadget.agent.Java_Gadget_Agent</Agent-Class>
             		
 		            <Can-Redefine-Classes>true</Can-Redefine-Classes>
 		            <Can-Retransform-Classes>true</Can-Retransform-Classes>

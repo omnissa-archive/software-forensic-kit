@@ -1,8 +1,8 @@
 /***************************************************
- * Copyright 2019 VMware, Inc.
+ * Copyright 2019 Omnissa, LLC.
  * SPDX-License-Identifier: BSD-2-Clause
  ***************************************************/
-package com.vmware.software_forensic_kit.java_gadget;
+package com.omnissa.software_forensic_kit.java_gadget;
 
 import java.io.File;
 import java.lang.management.ManagementFactory;
@@ -19,15 +19,15 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
-import com.vmware.software_forensic_kit.java_gadget.local.LocalCalls;
+import com.omnissa.software_forensic_kit.java_gadget.local.LocalCalls;
 
 public class Java_Gadget_Dynamic{
 	
 	public static void printUsage(HelpFormatter formatter, Options options) {
 		String footer = "Example Usage:\r\n" + 
-        		"	>java -cp software_forensic_kit.jar com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Dynamic -s \"ExampleClass:functionA\" -im -rp my.class.path.  /home/test/testfile.jar\r\n" + 
+        		"	>java -cp software_forensic_kit.jar com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Dynamic -s \"ExampleClass:functionA\" -im -rp my.class.path.  /home/test/testfile.jar\r\n" + 
         		"	or using wildcards * for filter\r\n" + 
-        		"	>java -cp software_forensic_kit.jar com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Dynamic  -s \"ExampleClass*functionA\" -pp -rp my.class.path.  /var/test/example.jar ";
+        		"	>java -cp software_forensic_kit.jar com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Dynamic  -s \"ExampleClass*functionA\" -pp -rp my.class.path.  /var/test/example.jar ";
         formatter.setOptionComparator(null);
         formatter.printHelp("Java_Gadget_Dynamic [OPTIONS] <FILE>\nOptions include:", "", options, footer, true);
     

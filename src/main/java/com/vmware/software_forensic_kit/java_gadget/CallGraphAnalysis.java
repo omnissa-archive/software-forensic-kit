@@ -1,8 +1,8 @@
 /***************************************************
- * Copyright 2019 VMware, Inc.
+ * Copyright 2019 Omnissa, LLC.
  * SPDX-License-Identifier: BSD-2-Clause
  ***************************************************/
-package com.vmware.software_forensic_kit.java_gadget;
+package com.omnissa.software_forensic_kit.java_gadget;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -21,7 +21,7 @@ import java.util.regex.PatternSyntaxException;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.vmware.software_forensic_kit.java_gadget.local.LocalCalls;
+import com.omnissa.software_forensic_kit.java_gadget.local.LocalCalls;
 
 public class CallGraphAnalysis{
 	

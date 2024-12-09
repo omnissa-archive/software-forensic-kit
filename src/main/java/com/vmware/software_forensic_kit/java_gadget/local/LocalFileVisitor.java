@@ -1,8 +1,8 @@
 /***************************************************
- * Copyright 2020 VMware, Inc.
+ * Copyright 2020 Omnissa, LLC.
  * SPDX-License-Identifier: BSD-2-Clause
  ***************************************************/
-package com.vmware.software_forensic_kit.java_gadget.local;
+package com.omnissa.software_forensic_kit.java_gadget.local;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;

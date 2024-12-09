@@ -1,4 +1,4 @@
-package com.vmware.software_forensic_kit.java_gadget;
+package com.omnissa.software_forensic_kit.java_gadget;
 
 import java.io.Console;
 import java.io.EOFException;
@@ -20,16 +20,16 @@ import org.apache.commons.cli.ParseException;
 
 import com.sun.tools.attach.VirtualMachine;
 import com.sun.tools.attach.VirtualMachineDescriptor;
-import com.vmware.software_forensic_kit.java_gadget.local.LocalCalls;
+import com.omnissa.software_forensic_kit.java_gadget.local.LocalCalls;
 
 public class Java_Gadget_Injector{
 	public static boolean exitserver = false;
 	
 	public static void printUsage(HelpFormatter formatter, Options options) {
 		String footer = "Example Usage:\r\n" + 
-        		"	>java -cp software_forensic_kit.jar com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Injector -s \"ExampleClass;functionA\" -pid 123\r\n" + 
+        		"	>java -cp software_forensic_kit.jar com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Injector -s \"ExampleClass;functionA\" -pid 123\r\n" + 
         		"	or using wildcards * for filter\r\n" + 
-        		"	>java -cp software_forensic_kit.jar com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Injector  -s \"ExampleClass;functionA\" -pid \"123;124;1235\"";
+        		"	>java -cp software_forensic_kit.jar com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Injector  -s \"ExampleClass;functionA\" -pid \"123;124;1235\"";
         formatter.setOptionComparator(null);
         formatter.printHelp("Java_Gadget_Dynamic [OPTIONS] <FILE>\nOptions include:", "", options, footer, true);
     

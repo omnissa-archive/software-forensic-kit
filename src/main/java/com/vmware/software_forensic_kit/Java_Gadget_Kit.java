@@ -1,8 +1,8 @@
 /***************************************************
- * Copyright 2019 VMware, Inc.
+ * Copyright 2019 Omnissa, LLC.
  * SPDX-License-Identifier: BSD-2-Clause
  ***************************************************/
-package com.vmware.software_forensic_kit;
+package com.omnissa.software_forensic_kit;
 
 import java.io.BufferedWriter;
 import java.io.Console;
@@ -26,11 +26,11 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.io.FileUtils;
 
-import com.vmware.software_forensic_kit.java_gadget.Java_Gadget;
-import com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Dynamic;
-import com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Injector;
-import com.vmware.software_forensic_kit.java_gadget.local.LocalCalls;
-import com.vmware.software_forensic_kit.java_gadget.remote.RemoteCalls;
+import com.omnissa.software_forensic_kit.java_gadget.Java_Gadget;
+import com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Dynamic;
+import com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Injector;
+import com.omnissa.software_forensic_kit.java_gadget.local.LocalCalls;
+import com.omnissa.software_forensic_kit.java_gadget.remote.RemoteCalls;
 
 public class Java_Gadget_Kit {
 	public static boolean exitprocess = false;
@@ -372,7 +372,7 @@ public class Java_Gadget_Kit {
 				System.out.println("Dynamic\n");
 				if (localOrRemote.matches("(?i)r")){
 					functionName = console.readLine("Target Function (ex: AClass:functionA): "); 
-					newLocalCmd = String.format("java -cp /var/kit/%s com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Dynamic -s \"%s\"", jarName, functionName);
+					newLocalCmd = String.format("java -cp /var/kit/%s com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Dynamic -s \"%s\"", jarName, functionName);
 
 		        	System.out.println(rc.sendCommand(newLocalCmd));
 
@@ -388,7 +388,7 @@ public class Java_Gadget_Kit {
 			}
 			else {
 				if (localOrRemote.matches("(?i)r")){
-					String listPIDCommand = String.format("java -cp /var/kit/%s com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Injector -lpid", jarName);
+					String listPIDCommand = String.format("java -cp /var/kit/%s com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Injector -lpid", jarName);
 					System.out.println(rc._sendCommand(listPIDCommand, true));
 				}
 				else {
@@ -452,7 +452,7 @@ public class Java_Gadget_Kit {
 						//su - newuser -c 'process'
 						String fullCommand = "";
 						for (String user: pidUserMap.keySet()) {
-							newLocalCmd = String.format("java -cp /var/kit/%s com.vmware.software_forensic_kit.java_gadget.Java_Gadget_Injector -s \"%s\" -pid \"%s\"", jarName, functionName, String.join(";", pidUserMap.get(user)));
+							newLocalCmd = String.format("java -cp /var/kit/%s com.omnissa.software_forensic_kit.java_gadget.Java_Gadget_Injector -s \"%s\" -pid \"%s\"", jarName, functionName, String.join(";", pidUserMap.get(user)));
 							fullCommand = String.format("su - %s -c '%s'", user, newLocalCmd);
 							System.out.println(fullCommand);
 							exitprocess = false;

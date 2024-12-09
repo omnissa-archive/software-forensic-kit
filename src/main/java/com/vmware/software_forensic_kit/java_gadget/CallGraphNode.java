@@ -1,8 +1,8 @@
 /***************************************************
- * Copyright 2019 VMware, Inc.
+ * Copyright 2019 Omnissa, LLC.
  * SPDX-License-Identifier: BSD-2-Clause
  ***************************************************/
-package com.vmware.software_forensic_kit.java_gadget;
+package com.omnissa.software_forensic_kit.java_gadget;
 
 import java.util.ArrayList;
 import java.util.Arrays;

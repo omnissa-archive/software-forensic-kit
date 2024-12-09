@@ -1,5 +1,5 @@
 Software_Forensic_Kit
-Copyright (c) 2019 VMware, Inc. All Rights Reserved. 
+Copyright (c) 2019 Omnissa, LLC. All Rights Reserved. 
 
 This product is licensed to you under the BSD-2 license (the "License").  You may not use this product except in compliance with the BSD-2 License.  
 

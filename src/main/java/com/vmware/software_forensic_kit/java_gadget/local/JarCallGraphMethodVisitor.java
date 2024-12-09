@@ -1,4 +1,4 @@
-package com.vmware.software_forensic_kit.java_gadget.local;
+package com.omnissa.software_forensic_kit.java_gadget.local;
 
 import java.lang.reflect.Modifier;
 import java.util.stream.Stream;

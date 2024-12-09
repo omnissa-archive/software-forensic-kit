@@ -1,8 +1,8 @@
 /***************************************************
- * Copyright 2019 VMware, Inc.
+ * Copyright 2019 Omnissa, LLC.
  * SPDX-License-Identifier: BSD-2-Clause
  ***************************************************/
-package com.vmware.software_forensic_kit.java_gadget.local;
+package com.omnissa.software_forensic_kit.java_gadget.local;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -153,7 +153,7 @@ public class LocalCalls{
 					
 					if(new File(jarPath + sep + fileLoc + sep + outputFile).exists() == false) {
 						Runtime runtime = Runtime.getRuntime();
-				    	String[] commands = {"java", "-cp", jarPath + sep + jarName, "com.vmware.software_forensic_kit.java_gadget.local.JarCallGraph", jar};
+				    	String[] commands = {"java", "-cp", jarPath + sep + jarName, "com.omnissa.software_forensic_kit.java_gadget.local.JarCallGraph", jar};
 				    
 						try {
 	

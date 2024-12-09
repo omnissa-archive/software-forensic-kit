@@ -2,7 +2,7 @@
 
 # Contributing to software-forensic-kit
 
-The software-forensic-kit project team welcomes contributions from the community. Before you start working with software-forensic-kit, please read our [Developer Certificate of Origin](https://cla.vmware.com/dco). All contributions to this repository must be signed as described on that page. Your signature certifies that you wrote the patch or have the right to pass it on as an open-source patch.
+The software-forensic-kit project team welcomes contributions from the community.
 
 
 ## Contribution Flow
@@ -18,7 +18,7 @@ This is a rough outline of what a contributor's workflow looks like:
 Example:
 
 ``` shell
-git remote add upstream https://github.com/vmware/software-forensic-kit.git
+git remote add upstream https://github.com/omnissa-archive/software-forensic-kit.git
 git checkout -b my-new-feature master
 git commit -a
 git push origin my-new-feature
@@ -26,7 +26,7 @@ git push origin my-new-feature
 
 ### Staying In Sync With Upstream
 
-When your branch gets out of sync with the vmware/master branch, use the following to update:
+When your branch gets out of sync with the omnissa-archive/master branch, use the following to update:
 
 ``` shell
 git checkout my-new-feature
